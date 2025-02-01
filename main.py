@@ -36,7 +36,7 @@ def selecionar_pasta():
 
 def mover_pasta():
     global moved_folder_path, app_name
-    app_name = app_name_entry.get()  # Get the app name directly
+    app_name = app_name_entry.get() 
     if selected_folder and app_name:
         destino = "/opt/"
         moved_folder_name = app_name
@@ -115,7 +115,6 @@ botao_selecionar.pack(pady=10)
 caminho_pasta = tk.Label(janela, text="")
 caminho_pasta.pack(pady=5)
 
-# Input for the app name
 app_name_label = tk.Label(janela, text="Nome do Aplicativo:")
 app_name_label.pack(pady=5)
 
